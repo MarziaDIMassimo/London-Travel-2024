@@ -1,0 +1,330 @@
+/********************CSS RESET********************/ 
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   
+   }
+   
+   /**************GENERIC ELEMENTS***************/ 
+   body{
+       background-color: #fafafa;
+       font-family: Caveat, Arial, sans-serif;
+       line-height: 1.6;
+       min-height: 200vh;
+   }
+   
+   hr{
+     border: none;
+     border-top: 1px solid violet;
+     
+     margin-top: 50px !important;
+     margin-bottom: 50px !important;
+   }
+   
+   /**************intro***************/ 
+   .intro {
+       background-image: url(London/big\ ben.jpeg);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+      width: 100vw; /*viewport width*/
+      width:auto;
+      height: 100vh; /* viewport height*/
+   display: flex;
+   
+   }
+   
+   .intro-narrow{
+       background-image: url(London/big\ ben.jpeg);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+      width: 100vw; /*viewport width*/
+      width:auto;
+      height: 100vh; /* viewport height*/
+   display: flex;
+   
+   }
+   
+   
+   .intro-container {
+      color: #fff;
+       background-color: rgba(0,0,0,0.5);
+       /*properties: X Y size color*/
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+       
+       width: 25%;
+       text-align: center;
+       padding: 20px;
+       margin: auto;
+   }
+   
+   
+   .intro h1 { 
+       text-transform: uppercase;
+       font-weight: normal;
+       letter-spacing: 2px;
+       margin-bottom: 20px;
+   }
+   
+   .intro p {
+       line-height: 2;
+   }
+   
+   /********CARD**********/
+   
+   .card {
+    display: block;
+    color: black;
+    text-decoration: none;}
+   
+   .card-image {
+       height: 500px;
+       overflow: hidden;  /*crops the extra content*/
+   
+   }
+   
+   .card-image img {
+       display: block;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       transition-property: transform;
+       transition-duration: 1s;
+       transition-timing-function: ease-out;
+   
+   }
+   
+   .card h2  {
+       margin-top: 20px;
+       margin-bottom: 50px;
+   
+       font-size: 1.2em; /*120% of the default font size*/
+   }
+   
+   .card:hover img {
+       transform: scale(1.2);
+       transition-duration: 10s;
+       transition-timing-function: linear;
+   }
+   
+   /********Container**********/
+   .container{
+   
+   max-width: 1280px;
+   margin: auto;
+   }
+   
+   /********grid layout**********/
+   .row{
+       display: flex;
+       gap: 50px;
+       flex-wrap: wrap;
+   }
+   
+   .one-column .card{
+       width: 100%
+   }
+   .two-columns .card {
+       width: calc((100% - 50px) / 2);
+   }
+   
+   .two-columns2 .card {
+     width: calc((100% - 50px) / 2);
+   }
+   
+   .two-columns3 .card {
+    width: calc((100% - 50px) / 2);
+   }
+   
+   /********website content**********/
+   .main-content {
+       margin-top: 100px;
+   }
+   .content-narrow {
+       width: 50%;
+       margin: auto;
+       
+   }
+   
+   .vertical-title{
+       font-size: 0.9em;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       font-weight: normal;
+       transform-origin:0 0 ;
+       transform: rotate(90deg) translateY(5px);
+       position: absolute;   
+   }
+   
+   .footer{
+       background-color: grey;
+   }
+   
+   .footer .p{ 
+       width: 25%;
+       text-align: left;
+       padding: 20px;
+       margin: auto;
+   
+   } 
+    
+   /***footer***/
+   
+  i .website-footer .container {
+      display: flex;
+      flex-wrap: wrap;  
+   }
+   
+   .website-footer .summary {
+       width: 33%;
+   }
+   
+   .website-footer .footer-links {
+       margin-left: auto;
+      columns: 2;
+      gap: 50px;
+      text-decoration: none;
+   }
+   
+   .website-footer .footer-item {
+    margin-bottom: 10px;
+    text-decoration: none;
+   }
+   
+   .website-footer .footer-links{
+       color: black;
+       text-decoration: none;
+      
+      }
+   
+      .website-footer .copyright {
+       width: 100%;
+       text-align: center;
+      }
+   
+      /*****navbar******/
+   
+      .navbar {
+       background-color: white;
+      border-color: #ddd;
+      border-style: solid;
+      border-width: 0;
+   
+      /*overrides the cleared borders*/
+      border-bottom-width: 1px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      }
+   
+      .navbar .container {
+      display: flex;
+      }
+   
+      .navbar .a {
+       /*this will had padding to the elements later*/
+       display: block;
+       color: black;
+       text-decoration: none;
+       }
+   
+       .navbar-nav {
+         list-style: none;
+         display: flex;
+         margin-left: auto;
+       }
+   
+   
+       .nav-link{
+           /*padding: top/bottom left/right*/
+        padding: 50px 30px;
+         }
+       
+         .navbar-brand {
+        font-family: Caveat;
+        /*scale by 150% of the original font sze*/
+        font-size: 1.5em;
+        align-content: center;
+         }
+   
+         /***Stories***/
+         .story-header h1{
+           /**200% of the current fpnt size**/
+          font-size: 2em;
+          margin-bottom: 25px;
+           }
+          
+           .story-header p {
+            font-size: 1.5em; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            line-height: 1.2;
+            
+           }
+   
+           .story-header .byline {
+              margin-top: 10px;
+               }
+   
+           /**target everything inside the byline class**/
+           .story-header .byline * {
+              font-style: normal;
+               display: inline;
+              }
+   
+   .story-content p, .story-content .row {
+    margin-bottom: 50px;
+       }
+   
+   
+   .story-footer {
+    background-color: #f0f0f0;
+    padding: 100px 50px;   
+    margin: 50px auto;}
+   
+   .story-footer p {
+    text-align: center;
+   margin-bottom: 25px;}
+   
+   .social-links {
+    display: flex;
+    justify-content: center;
+   }
+   
+   
+   .social-icon {
+       /**removes an underline between the links**/
+    display: block;
+    background-color:#e0e0e0 ;
+    margin: 10px;
+    padding: 10px;
+   transition-property: backround-color;
+   transition-duration: 0.15s;
+   }
+   
+   
+   .social-icon svg {
+       display: block;
+       font-size: 20px;
+   width: 1em;
+   height: 1em;
+   }
+   
+   .social-icon:hover {
+    background-color: black;
+   }
+   
+   .social-icon:hover svg {
+     fill: white;
+     transition-property: fill;
+   transition-duration: 0.15s;
+   }
+   
+   
+     
+   

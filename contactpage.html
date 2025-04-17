@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(London/big\ ben.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .contact-header {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 5px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-header h1 {
+            margin-bottom: 10px;
+        }
+
+        .contact-form-container {
+            background-color: #f4f4f4;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container" style="background-image: url('big\ ben.jpeg'); background-size: cover; background-position: center;">
+    
+
+    </div>
+
+    <div class="contact-header">
+        <h1>Sadly it wasn't possible make nay photos since is a full experience in the horrors of London</h1>
+        <p>You should try it tho ahahah.</p>
+    </div>
+
+    <div class="contact-form-container">
+        <form class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
